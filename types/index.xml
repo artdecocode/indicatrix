@@ -1,10 +1,11 @@
 <types>
-  <type name="Config" desc="Options for the program.">
-    <prop boolean name="shouldRun" default="true">
-      A boolean option.
+  <import name="Writable" from="stream" />
+  <type name="Options" desc="The optional options for the indicator, such as the refresh interval.">
+    <prop number name="interval" default="250">
+      The interval with which to update the screen.
     </prop>
-    <prop string name="text">
-      A text to return.
+    <prop type="Writable" name="writable" default="process.stdout">
+      The writable stream used for printing data with the `.write` method.
     </prop>
   </type>
 </types>

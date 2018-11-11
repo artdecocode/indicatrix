@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/indicatrix.svg)](https://npmjs.org/package/indicatrix)
 
-`indicatrix` is A CLI Loading Indicator Implemented As A Changing Elipsis.
+`indicatrix` is A CLI Loading Indicator Implemented As A Changing Ellipsis.
 
 ```sh
 yarn add -E indicatrix
@@ -12,7 +12,7 @@ yarn add -E indicatrix
 
 - [Table Of Contents](#table-of-contents)
 - [API](#api)
-- [`indicatrix(arg1: string, arg2?: boolean)`](#mynewpackagearg1-stringarg2-boolean-void)
+- [`indicatrix(arg1: string, arg2?: boolean)`](#indicatrixarg1-stringarg2-boolean-void)
   * [`Config`](#type-config)
 - [Copyright](#copyright)
 

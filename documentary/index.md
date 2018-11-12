@@ -2,7 +2,7 @@
 
 %NPM: indicatrix%
 
-`indicatrix` is A CLI Loading Indicator Implemented As A Changing Ellipsis.
+`indicatrix` Is A CLI Loading Indicator Implemented As A Changing Ellipsis.
 
 ```sh
 yarn add -E indicatrix

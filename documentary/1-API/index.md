@@ -8,14 +8,15 @@ import indicatrix from 'indicatrix'
 
 %~%
 
-```## indicatrix
+```## async indicatrix => *
 [
-  ["arg1", "string"],
-  ["arg2?", "boolean"]
+  ["text", "string"],
+  ["promise", "Promise|() => Promise"],
+  ["options?", "Options"]
 ]
 ```
 
-Call this function to get the result you want.
+When called from the CLI application, `indicatrix` will print the supplied text and draw the ellipsis (`.` > `..` > `...` > `.`) animation at the end, until the promise is resolved.
 
 %TYPEDEF types/index.xml%
 

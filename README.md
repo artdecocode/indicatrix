@@ -2,7 +2,9 @@
 
 [![npm version](https://badge.fury.io/js/indicatrix.svg)](https://npmjs.org/package/indicatrix)
 
-`indicatrix` is A CLI Loading Indicator Implemented As A Changing Ellipsis.
+`indicatrix` Is A CLI Loading Indicator Implemented As A Changing Ellipsis.
+
+![ellipsis demo](/images/ellipsis.gif)
 
 ```sh
 yarn add -E indicatrix
@@ -12,8 +14,8 @@ yarn add -E indicatrix
 
 - [Table Of Contents](#table-of-contents)
 - [API](#api)
-- [`indicatrix(arg1: string, arg2?: boolean)`](#indicatrixarg1-stringarg2-boolean-void)
-  * [`Config`](#type-config)
+- [`async indicatrix(text: string, promise: Promise|() => Promise, options?: Options): *`](#async-indicatrixtext-stringpromise-promise--promiseoptions-options-)
+  * [`Options`](#type-options)
 - [Copyright](#copyright)
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/0.svg?sanitize=true"></a></p>
@@ -28,30 +30,33 @@ import indicatrix from 'indicatrix'
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
 
-## `indicatrix(`<br/>&nbsp;&nbsp;`arg1: string,`<br/>&nbsp;&nbsp;`arg2?: boolean,`<br/>`): void`
+## `async indicatrix(`<br/>&nbsp;&nbsp;`text: string,`<br/>&nbsp;&nbsp;`promise: Promise|() => Promise,`<br/>&nbsp;&nbsp;`options?: Options,`<br/>`): *`
 
-Call this function to get the result you want.
+When called from the CLI application, `indicatrix` will print the supplied text and draw the ellipsis (`.` > `..` > `...` > `.`) animation at the end, until the promise is resolved.
 
-__<a name="type-config">`Config`</a>__: Options for the program.
+`import('stream').Writable` __<a name="type-writable">`Writable`</a>__
 
-|   Name    |   Type    |    Description    | Default |
-| --------- | --------- | ----------------- | ------- |
-| shouldRun | _boolean_ | A boolean option. | `true`  |
-| __text*__ | _string_  | A text to return. | -       |
+__<a name="type-options">`Options`</a>__: The optional options for the indicator, such as the refresh interval.
+
+|   Name   |             Type             |                             Description                              |     Default      |
+| -------- | ---------------------------- | -------------------------------------------------------------------- | ---------------- |
+| interval | _number_                     | The interval with which to update the screen.                        | `250`            |
+| writable | _[Writable](#type-writable)_ | The writable stream used for printing data with the `.write` method. | `process.stdout` |
 
 ```js
 /* yarn example/ */
 import indicatrix from 'indicatrix'
 
 (async () => {
-  const res = await indicatrix({
-    text: 'example',
-  })
+  const res = await indicatrix('Please wait', async () => {
+    await new Promise(r => setTimeout(r, 750))
+    return 'OK'
+  }, { interval: 100 })
   console.log(res)
 })()
 ```
 ```
-example
+Please wait.              Please wait..              Please wait...              Please wait              Please wait.              Please wait..              Please wait...              Please wait              OK
 ```
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>

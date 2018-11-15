@@ -6,6 +6,8 @@
 
 ![ellipsis demo](/images/ellipsis.gif)
 
+%~%
+
 ```sh
 yarn add -E indicatrix
 ```

@@ -6,6 +6,8 @@
 
 ![ellipsis demo](/images/ellipsis.gif)
 
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/0.svg?sanitize=true"></a></p>
+
 ```sh
 yarn add -E indicatrix
 ```
@@ -18,7 +20,7 @@ yarn add -E indicatrix
   * [`Options`](#type-options)
 - [Copyright](#copyright)
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/0.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
 
 ## API
 
@@ -28,7 +30,7 @@ The package is available by importing its default function:
 import indicatrix from 'indicatrix'
 ```
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
 
 ## `async indicatrix(`<br/>&nbsp;&nbsp;`text: string,`<br/>&nbsp;&nbsp;`promise: Promise|() => Promise,`<br/>&nbsp;&nbsp;`options?: Options,`<br/>`): *`
 
@@ -59,7 +61,7 @@ import indicatrix from 'indicatrix'
 Please wait.              Please wait..              Please wait...              Please wait              Please wait.              Please wait..              Please wait...              Please wait              OK
 ```
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true"></a></p>
 
 ## Copyright
 

@@ -1,7 +1,7 @@
 /**
  * Will print the loading text and refresh the CLI line to show the ellipsis while the promise is loading.
  * @param {string} text The text to display in the CLI.
- * @param {boolean} promise The promise or an async function that returns the promise.
+ * @param {Promise} promise The promise or an async function that returns the promise.
  * @param {Options} options The optional options for the indicator, such as the refresh interval.
  * @param {number} [options.interval=250] The interval with which to update the screen. Default `250`.
  * @param {Writable} [options.writable="process.stdout"] The writable stream used for printing data with the `.write` method. Default `process.stdout`.

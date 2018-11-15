@@ -4,10 +4,7 @@ import indicatrix from '../../src'
 
 const ts = makeTestSuite('test/result', {
   async getResults(input) {
-    const res = await indicatrix({
-      text: input,
-    })
-    return res
+    return await indicatrix(input, () => input)
   },
   context: Context,
 })

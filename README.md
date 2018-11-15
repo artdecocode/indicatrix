@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/indicatrix.svg)](https://npmjs.org/package/indicatrix)
 
-`indicatrix` Is A CLI Loading Indicator Implemented As A Changing Ellipsis.
+`indicatrix` Is A CLI Loading Indicator Implemented As A Changing Ellipsis (Triple-Dot).
 
 ![ellipsis demo](/images/ellipsis.gif)
 

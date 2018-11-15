@@ -1,7 +1,7 @@
 {
   "name": "indicatrix",
   "version": "0.0.0",
-  "description": "A CLI Loading Indicator Implemented As A Changing Ellipsis.",
+  "description": "A CLI Loading Indicator Implemented As A Changing Ellipsis (Triple-Dot).",
   "main": "build",
   "scripts": {
     "t": "zoroaster -a",
@@ -27,7 +27,19 @@
     "url": "git://github.com/artdecocode/indicatrix.git"
   },
   "keywords": [
-    "indicatrix"
+    "indicatrix",
+    "load",
+    "loading",
+    "cli",
+    "terminal",
+    "console",
+    "ellipsis",
+    "triple dot",
+    "dots",
+    "indicator",
+    "indication",
+    "ui",
+    "wait"
   ],
   "author": "Anton <anton@adc.sh>",
   "license": "MIT",

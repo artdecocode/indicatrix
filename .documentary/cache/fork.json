@@ -1,0 +1,10 @@
+{
+  "example/example": {
+    "mtime": 1542324011000,
+    "analysis": [
+      "src/index.js 1542324230000"
+    ],
+    "stdout": "Please wait.\r              \rPlease wait..\r              \rPlease wait...\r              \rPlease wait\r              \rPlease wait.\r              \rPlease wait..\r              \rPlease wait...\r              \rPlease wait\r              \rOK\n",
+    "stderr": ""
+  }
+}

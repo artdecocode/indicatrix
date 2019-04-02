@@ -2,7 +2,8 @@
   "name": "indicatrix",
   "version": "1.0.0",
   "description": "A CLI Loading Indicator Implemented As A Changing Ellipsis (Triple-Dot).",
-  "main": "build",
+  "main": "build/index.js",
+  "module": "src/index.js",
   "scripts": {
     "t": "zoroaster -a",
     "test": "yarn t test/spec test/mask",
@@ -16,11 +17,12 @@
     "d1": "NODE_DEBUG=doc doc src/index.js -g",
     "build": "yarn-s d b doc",
     "rec": "NODE_DEBUG=appshot appshot -T 23 -a Terminal -y 150 -f",
-    "e": "node example",
+    "e": "alanode example",
     "example/": "yarn e example/example.js"
   },
   "files": [
-    "build"
+    "build",
+    "src"
   ],
   "repository": {
     "type": "git",
@@ -48,11 +50,11 @@
   },
   "homepage": "https://github.com/artdecocode/indicatrix#readme",
   "devDependencies": {
-    "alamode": "1.6.0",
-    "catchment": "3.2.0",
-    "documentary": "1.20.1",
+    "alamode": "1.9.0",
+    "catchment": "3.2.2",
+    "documentary": "1.23.2",
     "eslint-config-artdeco": "1.0.1",
     "yarn-s": "1.1.0",
-    "zoroaster": "3.6.6"
+    "zoroaster": "3.11.2"
   }
 }

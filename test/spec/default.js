@@ -1,7 +1,7 @@
 import { equal, throws } from 'zoroaster'
 import Context from '../context'
-import indicatrix from '../../src'
 import Catchment from 'catchment'
+import indicatrix from '../../src'
 
 /** @type {Object.<string, (c: Context)>} */
 const T = {
@@ -12,7 +12,7 @@ const T = {
   async 'prints the loading text'() {
     const writable = new Catchment()
     await indicatrix('test', async () => {
-      await new Promise(r => setTimeout(r, 10))
+      await new Promise(r => setTimeout(r, 13))
     }, {
       interval: 5,
       writable,

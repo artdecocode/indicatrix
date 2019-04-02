@@ -58,15 +58,25 @@ import indicatrix from 'indicatrix'
 })()
 ```
 ```
-Please wait.              Please wait..              Please wait...              Please wait              Please wait.              Please wait..              Please wait...              Please wait              OK
+Please wait.
+Please wait..
+Please wait...
+Please wait
+Please wait.
+Please wait..
+Please wait...
+Please wait
+```
+```
+OK            
 ```
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true"></a></p>
 
 ## Copyright
 
-(c) [Art Deco][1] 2018
+(c) [Art Deco][1] 2019
 
-[1]: https://artdeco.bz
+[1]: https://artd.eco
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/-1.svg?sanitize=true"></a></p>

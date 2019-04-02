@@ -1,12 +1,10 @@
-import { makeTestSuite } from 'zoroaster'
+import makeTestSuite from '@zoroaster/mask'
 import Context from '../context'
 import indicatrix from '../../src'
 
-const ts = makeTestSuite('test/result', {
+export default makeTestSuite('test/result', {
   async getResults(input) {
     return await indicatrix(input, () => input)
   },
   context: Context,
 })
-
-export default ts

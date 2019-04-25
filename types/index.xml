@@ -4,7 +4,7 @@
     <prop number name="interval" default="250">
       The interval with which to update the screen.
     </prop>
-    <prop type="!(NodeJS.WriteStream|stream.Writable)" name="writable" default="process.stdout">
+    <prop type="stream.Writable" closure="!(NodeJS.WriteStream|stream.Writable)" name="writable" default="process.stdout">
       The writable stream used for printing data with the `.write` method.
     </prop>
   </type>

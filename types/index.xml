@@ -1,10 +1,10 @@
-<types>
+<types namespace="_indicatrix">
   <import name="Writable" from="stream" />
   <type name="Options" desc="The optional options for the indicator, such as the refresh interval.">
     <prop number name="interval" default="250">
       The interval with which to update the screen.
     </prop>
-    <prop type="Writable" name="writable" default="process.stdout">
+    <prop type="stream.Writable" name="writable" default="process.stdout">
       The writable stream used for printing data with the `.write` method.
     </prop>
   </type>

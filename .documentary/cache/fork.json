@@ -6,5 +6,9 @@
     ],
     "stdout": "Please wait.\r              \rPlease wait..\r              \rPlease wait...\r              \rPlease wait\r              \rPlease wait.\r              \rPlease wait..\r              \rPlease wait...\r              \rPlease wait\r              \rOK\n",
     "stderr": ""
+  },
+  "[96c45e153ecb8d1f725fee7e4381d5ff] example": {
+    "stdout": "Please wait.\r              \rPlease wait..\r              \rPlease wait...\r              \rPlease wait\r              \rPlease wait.\r              \rPlease wait..\r              \rPlease wait...\r              \rPlease wait\r              \rOK\n",
+    "stderr": ""
   }
 }

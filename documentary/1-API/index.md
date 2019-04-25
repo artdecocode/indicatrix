@@ -20,7 +20,7 @@ When called from the CLI application, `indicatrix` will print the supplied text 
 
 %TYPEDEF types/index.xml%
 
-%EXAMPLE: example/example, ../src => indicatrix%
+%EXAMPLE: example, ../src => indicatrix%
 ```
 Please wait.
 Please wait..
@@ -31,6 +31,6 @@ Please wait..
 Please wait...
 Please wait
 ```
-%FORK example/example%
+%FORK example%
 
 %~%

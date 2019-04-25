@@ -17,7 +17,7 @@ yarn add -E indicatrix
 - [Table Of Contents](#table-of-contents)
 - [API](#api)
 - [`async indicatrix(text: string, promise: Promise|() => Promise, options?: Options): *`](#async-indicatrixtext-stringpromise-promise--promiseoptions-options-)
-  * [`Options`](#type-options)
+  * [`_indicatrix.Options`](#type-_indicatrixoptions)
 - [Copyright](#copyright)
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
@@ -36,14 +36,14 @@ import indicatrix from 'indicatrix'
 
 When called from the CLI application, `indicatrix` will print the supplied text and draw the ellipsis (`.` > `..` > `...` > `.`) animation at the end, until the promise is resolved.
 
-`import('stream').Writable` __<a name="type-writable">`Writable`</a>__
+`import('stream').Writable` __<a name="type-streamwritable">`stream.Writable`</a>__
 
-__<a name="type-options">`Options`</a>__: The optional options for the indicator, such as the refresh interval.
+__<a name="type-_indicatrixoptions">`_indicatrix.Options`</a>__: The optional options for the indicator, such as the refresh interval.
 
-|   Name   |             Type             |                             Description                              |     Default      |
-| -------- | ---------------------------- | -------------------------------------------------------------------- | ---------------- |
-| interval | _number_                     | The interval with which to update the screen.                        | `250`            |
-| writable | _[Writable](#type-writable)_ | The writable stream used for printing data with the `.write` method. | `process.stdout` |
+|   Name   |                       Type                       |                             Description                              |     Default      |
+| -------- | ------------------------------------------------ | -------------------------------------------------------------------- | ---------------- |
+| interval | <em>number</em>                                  | The interval with which to update the screen.                        | `250`            |
+| writable | <em>[stream.Writable](#type-streamwritable)</em> | The writable stream used for printing data with the `.write` method. | `process.stdout` |
 
 ```js
 /* yarn example/ */
@@ -75,8 +75,22 @@ OK
 
 ## Copyright
 
-(c) [Art Deco][1] 2019
-
-[1]: https://artd.eco
+<table>
+  <tr>
+    <th>
+      <a href="https://artd.eco">
+        <img src="https://raw.githubusercontent.com/wrote/wrote/master/images/artdeco.png" alt="Art Deco" />
+      </a>
+    </th>
+    <th>© <a href="https://artd.eco">Art Deco</a>   2019</th>
+    <th>
+      <a href="https://www.technation.sucks" title="Tech Nation Visa">
+        <img src="https://raw.githubusercontent.com/artdecoweb/www.technation.sucks/master/anim.gif"
+          alt="Tech Nation Visa" />
+      </a>
+    </th>
+    <th><a href="https://www.technation.sucks">Tech Nation Visa Sucks</a></th>
+  </tr>
+</table>
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/-1.svg?sanitize=true"></a></p>

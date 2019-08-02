@@ -1,6 +1,6 @@
 <types namespace="_indicatrix">
   <import from="stream" name="Writable"/>
-  <type name="Options" desc="The optional options for the indicator, such as the refresh interval.">
+  <type record name="Options" desc="The optional options for the indicator, such as the refresh interval.">
     <prop number name="interval" default="250">
       The interval with which to update the screen.
     </prop>

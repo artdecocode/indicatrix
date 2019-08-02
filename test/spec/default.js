@@ -1,6 +1,6 @@
-import { equal, throws } from 'zoroaster'
-import Context from '../context'
+import { equal, throws } from '@zoroaster/assert'
 import Catchment from 'catchment'
+import Context from '../context'
 import indicatrix from '../../src'
 
 /** @type {Object.<string, (c: Context)>} */

@@ -3,8 +3,8 @@ import Context from '../context'
 import indicatrix from '../../src'
 
 export default makeTestSuite('test/result', {
-  async getResults(input) {
-    return await indicatrix(input, () => input)
+  async getResults() {
+    return await indicatrix(this.input, () => this.input)
   },
   context: Context,
 })

@@ -6,7 +6,9 @@
 
 ![ellipsis demo](/images/ellipsis.gif)
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/0.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents">
+  <img src="/.documentary/section-breaks/0.svg?sanitize=true">
+</a></p>
 
 ```sh
 yarn add -E indicatrix
@@ -20,7 +22,9 @@ yarn add -E indicatrix
   * [`_indicatrix.Options`](#type-_indicatrixoptions)
 - [Copyright](#copyright)
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents">
+  <img src="/.documentary/section-breaks/1.svg?sanitize=true">
+</a></p>
 
 ## API
 
@@ -30,7 +34,9 @@ The package is available by importing its default function:
 import indicatrix from 'indicatrix'
 ```
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents">
+  <img src="/.documentary/section-breaks/2.svg?sanitize=true">
+</a></p>
 
 ## `async indicatrix(`<br/>&nbsp;&nbsp;`text: string,`<br/>&nbsp;&nbsp;`promise: Promise|() => Promise,`<br/>&nbsp;&nbsp;`options?: Options,`<br/>`): *`
 
@@ -38,7 +44,7 @@ When called from the CLI application, `indicatrix` will print the supplied text 
 
 `import('stream').Writable` __<a name="type-streamwritable">`stream.Writable`</a>__
 
-__<a name="type-_indicatrixoptions">`_indicatrix.Options`</a>__: The optional options for the indicator, such as the refresh interval.
+<strong><a name="type-_indicatrixoptions">`_indicatrix.Options`</a></strong>: The optional options for the indicator, such as the refresh interval.
 
 |   Name   |                       Type                       |                             Description                              |     Default      |
 | -------- | ------------------------------------------------ | -------------------------------------------------------------------- | ---------------- |
@@ -71,7 +77,9 @@ Please wait
 OK            
 ```
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents">
+  <img src="/.documentary/section-breaks/3.svg?sanitize=true">
+</a></p>
 
 ## Copyright
 
@@ -79,18 +87,21 @@ OK
   <tr>
     <th>
       <a href="https://artd.eco">
-        <img src="https://raw.githubusercontent.com/wrote/wrote/master/images/artdeco.png" alt="Art Deco" />
+        <img width="100" src="https://raw.githubusercontent.com/wrote/wrote/master/images/artdeco.png"
+          alt="Art Deco">
       </a>
     </th>
     <th>© <a href="https://artd.eco">Art Deco</a>   2019</th>
     <th>
       <a href="https://www.technation.sucks" title="Tech Nation Visa">
-        <img src="https://raw.githubusercontent.com/artdecoweb/www.technation.sucks/master/anim.gif"
-          alt="Tech Nation Visa" />
+        <img width="100" src="https://raw.githubusercontent.com/idiocc/cookies/master/wiki/arch4.jpg"
+          alt="Tech Nation Visa">
       </a>
     </th>
     <th><a href="https://www.technation.sucks">Tech Nation Visa Sucks</a></th>
   </tr>
 </table>
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/-1.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents">
+  <img src="/.documentary/section-breaks/-1.svg?sanitize=true">
+</a></p>

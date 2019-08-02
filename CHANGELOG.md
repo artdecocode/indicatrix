@@ -1,3 +1,10 @@
+## 2 August 2019
+
+### [1.3.0](https://github.com/artdecocode/indicatrix/compare/v1.2.0...v1.3.0)
+
+- [feature] Add generics template JSDoc annotations.
+- [package] Compile with [_Depack_](https://compiler.page).
+
 ## 25 April 2019
 
 ### [1.2.0](https://github.com/artdecocode/indicatrix/compare/v1.1.0...v1.2.0)

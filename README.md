@@ -19,7 +19,7 @@ yarn add -E indicatrix
 - [Table Of Contents](#table-of-contents)
 - [API](#api)
 - [`async indicatrix(text: string, promise: Promise|() => Promise, options?: Options): *`](#async-indicatrixtext-stringpromise-promise--promiseoptions-options-)
-  * [`_indicatrix.Options`](#type-_indicatrixoptions)
+  * [`Options`](#type-options)
 - [`INDICATRIX_PLACEHOLDER` env](#indicatrix_placeholder-env)
 - [Copyright](#copyright)
 
@@ -45,7 +45,7 @@ When called from the CLI application, `indicatrix` will print the supplied text 
 
 `import('stream').Writable` __<a name="type-streamwritable">`stream.Writable`</a>__
 
-<strong><a name="type-_indicatrixoptions">`_indicatrix.Options`</a></strong>: The optional options for the indicator, such as the refresh interval.
+__<a name="type-options">`Options`</a>__: The optional options for the indicator, such as the refresh interval.
 
 |   Name   |                                   Type                                    |                             Description                              |     Default      |
 | -------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---------------- |
@@ -85,7 +85,8 @@ OK
 
 When the `INDICATRIX_PLACEHOLDER` is set to anything other than `0`, the package won't print the `...` ellipsis, but append the static `<INDICATRIX_PLACEHOLDER>` string to the loading text instead. This is used by [documentary](https://artdecocode.com/documentary/) to add an interactive placeholder:
 
-<pre>Please wait<img src=".documentary/indicatrix.gif">OK</pre>
+<pre>Please wait<img src=".documentary/indicatrix.gif">
+OK</pre>
 
 <p align="center"><a href="#table-of-contents">
   <img src="/.documentary/section-breaks/4.svg?sanitize=true">

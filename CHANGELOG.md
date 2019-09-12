@@ -1,3 +1,9 @@
+## 12 September 2019
+
+### [1.4.0](https://github.com/artdecocode/indicatrix/compare/v1.3.0...v1.4.0)
+
+- [feature] Support `INDICATRIX_PLACEHOLDER` env variable for _Documentary_.
+
 ## 2 August 2019
 
 ### [1.3.0](https://github.com/artdecocode/indicatrix/compare/v1.2.0...v1.3.0)

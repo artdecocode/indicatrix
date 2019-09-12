@@ -20,6 +20,7 @@ yarn add -E indicatrix
 - [API](#api)
 - [`async indicatrix(text: string, promise: Promise|() => Promise, options?: Options): *`](#async-indicatrixtext-stringpromise-promise--promiseoptions-options-)
   * [`_indicatrix.Options`](#type-_indicatrixoptions)
+- [`INDICATRIX_PLACEHOLDER` env](#indicatrix_placeholder-env)
 - [Copyright](#copyright)
 
 <p align="center"><a href="#table-of-contents">
@@ -38,7 +39,7 @@ import indicatrix from 'indicatrix'
   <img src="/.documentary/section-breaks/2.svg?sanitize=true">
 </a></p>
 
-## `async indicatrix(`<br/>&nbsp;&nbsp;`text: string,`<br/>&nbsp;&nbsp;`promise: Promise|() => Promise,`<br/>&nbsp;&nbsp;`options?: Options,`<br/>`): *`
+## <code>async <ins>indicatrix</ins>(</code><sub><br/>&nbsp;&nbsp;`text: string,`<br/>&nbsp;&nbsp;`promise: Promise|() => Promise,`<br/>&nbsp;&nbsp;`options?: Options,`<br/></sub><code>): <i>*</i></code>
 
 When called from the CLI application, `indicatrix` will print the supplied text and draw the ellipsis (`.` > `..` > `...` > `.`) animation at the end, until the promise is resolved.
 
@@ -46,13 +47,12 @@ When called from the CLI application, `indicatrix` will print the supplied text 
 
 <strong><a name="type-_indicatrixoptions">`_indicatrix.Options`</a></strong>: The optional options for the indicator, such as the refresh interval.
 
-|   Name   |                       Type                       |                             Description                              |     Default      |
-| -------- | ------------------------------------------------ | -------------------------------------------------------------------- | ---------------- |
-| interval | <em>number</em>                                  | The interval with which to update the screen.                        | `250`            |
-| writable | <em>[stream.Writable](#type-streamwritable)</em> | The writable stream used for printing data with the `.write` method. | `process.stdout` |
+|   Name   |                                   Type                                    |                             Description                              |     Default      |
+| -------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---------------- |
+| interval | <em>number</em>                                                           | The interval with which to update the screen.                        | `250`            |
+| writable | <em>!(NodeJS.WriteStream \| [stream.Writable](#type-streamwritable))</em> | The writable stream used for printing data with the `.write` method. | `process.stdout` |
 
 ```js
-/* yarn example/ */
 import indicatrix from 'indicatrix'
 
 (async () => {
@@ -79,6 +79,16 @@ OK
 
 <p align="center"><a href="#table-of-contents">
   <img src="/.documentary/section-breaks/3.svg?sanitize=true">
+</a></p>
+
+## `INDICATRIX_PLACEHOLDER` env
+
+When the `INDICATRIX_PLACEHOLDER` is set to anything other than `0`, the package won't print the `...` ellipsis, but append the static `<INDICATRIX_PLACEHOLDER>` string to the loading text instead. This is used by [documentary](https://artdecocode.com/documentary/) to add an interactive placeholder:
+
+<pre>Please wait<img src=".documentary/indicatrix.gif">OK</pre>
+
+<p align="center"><a href="#table-of-contents">
+  <img src="/.documentary/section-breaks/4.svg?sanitize=true">
 </a></p>
 
 ## Copyright

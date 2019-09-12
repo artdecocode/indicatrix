@@ -31,6 +31,14 @@ Please wait..
 Please wait...
 Please wait
 ```
-%FORK example%
+<fork env="INDICATRIX_PLACEHOLDER=0">example</fork>
+
+%~%
+
+## `INDICATRIX_PLACEHOLDER` env
+
+When the `INDICATRIX_PLACEHOLDER` is set to anything other than `0`, the package won't print the `...` ellipsis, but append the static `<INDICATRIX_PLACEHOLDER>` string to the loading text instead. This is used by [documentary](https://artdecocode.com/documentary/) to add an interactive placeholder:
+
+<fork>example</fork>
 
 %~%

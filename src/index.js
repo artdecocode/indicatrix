@@ -12,6 +12,12 @@ export default async function indicatrix(text, promise, options = {}) {
   const p = typeof promise == 'function' ? promise() : promise
   const write = writable.write.bind(writable)
 
+  const { 'INDICATRIX_PLACEHOLDER': placeholder } = process.env
+  if (placeholder && placeholder != '0') {
+    write(`${text}<INDICATRIX_PLACEHOLDER>`)
+    return await p
+  }
+
   let i = 1
   const getText = () => `${text}${'.'.repeat(i)}`
   const clear = () => write(`\r${' '.repeat(text.length + 3)}\r`)

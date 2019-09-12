@@ -1,4 +1,3 @@
-/* yarn example/ */
 import indicatrix from '../src'
 
 (async () => {

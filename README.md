@@ -85,7 +85,7 @@ OK
 
 When the `INDICATRIX_PLACEHOLDER` is set to anything other than `0`, the package won't print the `...` ellipsis, but append the static `<INDICATRIX_PLACEHOLDER>` string to the loading text instead. This is used by [documentary](https://artdecocode.com/documentary/) to add an interactive placeholder:
 
-<pre>Please wait<img src=".documentary/indicatrix.gif">
+<pre>Please wait<a id="_ind0" href="#_ind0"><img src=".documentary/indicatrix.gif"></a>
 OK</pre>
 
 <p align="center"><a href="#table-of-contents">

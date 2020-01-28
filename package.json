@@ -1,6 +1,6 @@
 {
   "name": "indicatrix",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "A CLI Loading Indicator Implemented As A Changing Ellipsis (Triple-Dot).",
   "main": "compile/index.js",
   "module": "src/index.js",

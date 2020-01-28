@@ -1,24 +1,23 @@
 'use strict';
-module.exports = async function(c, a, b = {}) {
-  const {interval:h = 250, writable:g = process.stdout} = b;
+module.exports = async function(b, a, c = {}) {
+  const {interval:h = 250, writable:g = process.stdout} = c;
   a = "function" == typeof a ? a() : a;
   const d = g.write.bind(g);
-  ({INDICATRIX_PLACEHOLDER:b} = process.env);
-  if (b && "0" != b) {
-    return d(`${c}<INDICATRIX_PLACEHOLDER>`), await a;
+  if ((c = process.env.INDICATRIX_PLACEHOLDER) && "0" != c) {
+    return d(`${b}<INDICATRIX_PLACEHOLDER>`), await a;
   }
-  let e = 1, f = `${c}${".".repeat(e)}`;
+  let e = 1, f = `${b}${".".repeat(e)}`;
   d(f);
-  b = setInterval(() => {
+  c = setInterval(() => {
     e = (e + 1) % 4;
-    f = `${c}${".".repeat(e)}`;
-    d(`\r${" ".repeat(c.length + 3)}\r`);
+    f = `${b}${".".repeat(e)}`;
+    d(`\r${" ".repeat(b.length + 3)}\r`);
     d(f);
   }, h);
   try {
     return await a;
   } finally {
-    clearInterval(b), d(`\r${" ".repeat(c.length + 3)}\r`);
+    clearInterval(c), d(`\r${" ".repeat(b.length + 3)}\r`);
   }
 };
 

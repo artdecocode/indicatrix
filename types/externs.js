@@ -20,3 +20,22 @@ _indicatrix.Options.prototype.interval
  * @type {(!(NodeJS.WriteStream|stream.Writable))|undefined}
  */
 _indicatrix.Options.prototype.writable
+
+/**
+ * @type {string}
+ */
+process.env.INDICATRIX_PLACEHOLDER
+
+// manual function because of template
+/**
+ * @param {string} text The text to display in the CLI.
+ * @param {(!Promise<T>|function(...*): !Promise<T>)} promise The promise or an async function that returns the promise.
+ * @param {!_indicatrix.Options} [options] The optional options for the indicator, such as the refresh interval.
+ * @template T
+ */
+const $indicatrix = (text, promise, options) => {}
+
+/**
+ * @typedef {typeof $indicatrix}
+ */
+_indicatrix.indicatrix

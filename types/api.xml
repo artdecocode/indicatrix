@@ -1,0 +1,14 @@
+<types namespace="_indicatrix">
+  <method name="indicatrix" async return="T">
+    <arg string name="text">
+      The text to display in the CLI.
+    </arg>
+    <arg type="!Promise<T>|function(...*): !Promise<T>" name="promise">
+      The promise or an async function that returns the promise.
+    </arg>
+    <arg opt type="!_indicatrix.Options" name="options">
+      The optional options for the indicator, such as the refresh interval.
+    </arg>
+    Will print the loading text and refresh the CLI line to show the ellipsis while the promise is loading.
+  </method>
+</types>

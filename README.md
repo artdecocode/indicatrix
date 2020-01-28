@@ -1,6 +1,6 @@
 # indicatrix
 
-[![npm version](https://badge.fury.io/js/indicatrix.svg)](https://npmjs.org/package/indicatrix)
+[![npm version](https://badge.fury.io/js/indicatrix.svg)](https://www.npmjs.com/package/indicatrix)
 
 `indicatrix` Is A CLI Loading Indicator Implemented As A Changing Ellipsis (Triple-Dot).
 
@@ -18,7 +18,7 @@ yarn add -E indicatrix
 
 - [Table Of Contents](#table-of-contents)
 - [API](#api)
-- [`async indicatrix(text: string, promise: Promise|() => Promise, options?: Options): *`](#async-indicatrixtext-stringpromise-promise--promiseoptions-options-)
+- [`async indicatrix(text, promise, options=): T`](#async-indicatrixtext-stringpromise-promisetfunction-promisetoptions-options-t)
   * [`Options`](#type-options)
 - [`INDICATRIX_PLACEHOLDER` env](#indicatrix_placeholder-env)
 - [Copyright](#copyright)
@@ -39,13 +39,17 @@ import indicatrix from 'indicatrix'
   <img src="/.documentary/section-breaks/2.svg?sanitize=true">
 </a></p>
 
-## <code>async <ins>indicatrix</ins>(</code><sub><br/>&nbsp;&nbsp;`text: string,`<br/>&nbsp;&nbsp;`promise: Promise|() => Promise,`<br/>&nbsp;&nbsp;`options?: Options,`<br/></sub><code>): <i>*</i></code>
+## <code>async <ins>indicatrix</ins>(</code><sub><br/>&nbsp;&nbsp;`text: string,`<br/>&nbsp;&nbsp;`promise: !Promise<T>|function(...*): !Promise<T>,`<br/>&nbsp;&nbsp;`options=: !Options,`<br/></sub><code>): <i>T</i></code>
+Will print the loading text and refresh the CLI line to show the ellipsis while the promise is loading.
+
+ - <kbd><strong>text*</strong></kbd> <em>`string`</em>: The text to display in the CLI.
+ - <kbd><strong>promise*</strong></kbd> <em><code>(!Promise&lt;T&gt; \| function(...*): !Promise&lt;T&gt;)</code></em>: The promise or an async function that returns the promise.
+ - <kbd>options</kbd> <em><code><a href="#type-options" title="The optional options for the indicator, such as the refresh interval.">!Options</a></code></em> (optional): The optional options for the indicator, such as the refresh interval.
 
 When called from the CLI application, `indicatrix` will print the supplied text and draw the ellipsis (`.` > `..` > `...` > `.`) animation at the end, until the promise is resolved.
 
-`import('stream').Writable` __<a name="type-streamwritable">`stream.Writable`</a>__
-
 __<a name="type-options">`Options`</a>__: The optional options for the indicator, such as the refresh interval.
+
 
 |   Name   |                                   Type                                    |                             Description                              |     Default      |
 | -------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---------------- |
@@ -97,19 +101,12 @@ OK</pre>
 <table>
   <tr>
     <th>
-      <a href="https://artd.eco">
+      <a href="https://www.artd.eco">
         <img width="100" src="https://raw.githubusercontent.com/wrote/wrote/master/images/artdeco.png"
           alt="Art Deco">
       </a>
     </th>
-    <th>© <a href="https://artd.eco">Art Deco</a>   2019</th>
-    <th>
-      <a href="https://www.technation.sucks" title="Tech Nation Visa">
-        <img width="100" src="https://raw.githubusercontent.com/idiocc/cookies/master/wiki/arch4.jpg"
-          alt="Tech Nation Visa">
-      </a>
-    </th>
-    <th><a href="https://www.technation.sucks">Tech Nation Visa Sucks</a></th>
+    <th>© <a href="https://www.artd.eco">Art Deco™</a>   2020</th>
   </tr>
 </table>
 

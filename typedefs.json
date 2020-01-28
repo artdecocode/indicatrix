@@ -1,0 +1,10 @@
+{
+  "_indicatrix.indicatrix": {
+    "link": "https://github.com/artdecocode/indicatrix#async-indicatrixtext-stringpromise-promisetfunction-promisetoptions-options-t",
+    "description": "Will print the loading text and refresh the CLI line to show the ellipsis while the promise is loading."
+  },
+  "_indicatrix.Options": {
+    "link": "https://github.com/artdecocode/indicatrix#type-options",
+    "description": "The optional options for the indicator, such as the refresh interval."
+  }
+}

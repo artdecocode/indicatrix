@@ -25,7 +25,8 @@
   "files": [
     "compile",
     "src",
-    "types/externs.js"
+    "types/externs.js",
+    "typedefs.json"
   ],
   "externs": [
     "types/externs.js",
@@ -35,6 +36,7 @@
     "type": "git",
     "url": "git://github.com/artdecocode/indicatrix.git"
   },
+  "typedefs": "typedefs.json",
   "keywords": [
     "indicatrix",
     "load",

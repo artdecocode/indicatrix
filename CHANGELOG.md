@@ -1,3 +1,9 @@
+## 28 January 2020
+
+### [1.4.1](https://github.com/artdecocode/indicatrix/compare/v1.4.0...v1.4.1)
+
+- [fix] Add `INDICATRIX_PLACEHOLDER` to externs to prevent renaming.
+
 ## 12 September 2019
 
 ### [1.4.0](https://github.com/artdecocode/indicatrix/compare/v1.3.0...v1.4.0)
